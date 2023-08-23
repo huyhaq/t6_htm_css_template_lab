@@ -14,95 +14,86 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="css/style.css" type="text/css">
    <body>
-      <div class="offcanvas-menu-wrapper">
-         <div class="offcanvas__close">+</div>
-         <ul class="offcanvas__widget">
-            <li><span class="icon_search search-switch"></span></li>
-            <li>
-               <a href="#">
-                  <span class="icon_heart_alt"></span>
-                  <div class="tip">2</div>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                  <span class="icon_bag_alt"></span>
-                  <div class="tip">2</div>
-               </a>
-            </li>
-         </ul>
-         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt></a>
-         </div>
-         <div id="mobile-menu-wrap"></div>
-         <div class="offcanvas__auth">
-            <a href="#">Login</a>
-            <a href="#">Register</a>
-         </div>
-      </div>
       <header class="header">
-         <div class=" -fluid">
-            <div class=" ">
-               <div class="col-xl-3  -2">
-                  <div class="header__logo">
-                     <a href="./index.html"><img src="img/logo.png" alt></a>
-                  </div>
-               </div>
-               <div class="col-xl-6  -7">
-                  <nav class="header__menu">
-                     <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="#">Women’s</a></li>
-                        <li><a href="#">Men’s</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
-                        <li>
-                           <a href="#">Pages</a>
-                           <ul class="dropdown">
-                              <li><a href="./product-details.html">Product Details</a></li>
-                              <li><a href="./shop-cart.html">Shop Cart</a></li>
-                              <li><a href="./checkout.html">Checkout</a></li>
-                              <li><a href="./blog-details.html">Blog Details</a></li>
-                           </ul>
-                        </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                     </ul>
-                  </nav>
-               </div>
-               <div class=" -3">
-                  <div class="header__right">
+
+         <nav class="navbar bg-white navbar-expand-sm container" aria-label="Light offcanvas navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"><img src="img/logo.png" alt></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Women’s</a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="#">Men's</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Shop</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Pages</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Blog</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Contact</a>
+                   </li>
+                  </ul>
+
+                  <div class="header__right d-flex align-items-center">
                      <div class="header__right__auth">
                         <a href="#">Login</a>
+                        <span>/</span>
                         <a href="#">Register</a>
                      </div>
-                     <ul class="header__right__widget">
-                        <li><span class="icon_search search-switch"></span></li>
-                        <li>
-                           <a href="#">
-                              <span class="icon_heart_alt"></span>
-                              <div class="tip">2</div>
+                     <ul class="header__right__widget d-flex align-items-center p-0">
+                        <li class="pe-2">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li class="pe-2">
+                           <a href="#" class="position-relative">
+                              <i class="fa-regular text-dark fa-heart"></i>
+                              <span class="badge-custom position-absolute top-0  translate-middle badge rounded-pill bg-dark">
+                                 9
+                               </span>
                            </a>
                         </li>
                         <li>
-                           <a href="#">
-                              <span class="icon_bag_alt"></span>
-                              <div class="tip">2</div>
+                           <a href="#" class="position-relative">
+                              <i class="fa-solid text-dark fa-clipboard-list"></i>
+                              <span class="badge-custom position-absolute top-0 translate-middle badge rounded-pill bg-dark">
+                                 9
+                               </span>
                            </a>
                         </li>
                      </ul>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-            <div class="canvas__open">
-               <i class="fa fa-bars"></i>
-            </div>
-         </div>
+          </nav>
+
       </header>
       <section class="categories">
-         <div class=" -fluid">
-            <div class=" ">
-               <div class=" -6 p-0">
+         <div class="">
+            <div class="categories_wrap">
+               <div class="col-12 p-0">
                   <div class="categories__item categories__large__item set-bg" data-setbg="img/categories/category-1.jpg">
+                     <div class="categories__img">
+                        <img src="img/categories/category-1.jpg" alt="">
+                     </div>
                      <div class="categories__text">
                         <h1>Women’s fashion</h1>
                         <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore
@@ -112,10 +103,13 @@
                      </div>
                   </div>
                </div>
-               <div class=" -6">
-                  <div class=" ">
-                     <div class=" -6  -6  -6 p-0">
-                        <div class="categories__item set-bg" data-setbg="img/categories/category-2.jpg">
+               <div class="col-12 m-0 ">
+                  <div class="banner-right p-0">
+                     <div class="col-12 p-0">
+                        <div class="categories__item set-bg pt-0" data-setbg="img/categories/category-2.jpg">
+                           <div class="categories__img">
+                              <img src="img/categories/category-2.jpg" alt="">
+                           </div>
                            <div class="categories__text">
                               <h4>Men’s fashion</h4>
                               <p>358 items</p>
@@ -123,8 +117,11 @@
                            </div>
                         </div>
                      </div>
-                     <div class=" -6  -6  -6 p-0">
-                        <div class="categories__item set-bg" data-setbg="img/categories/category-3.jpg">
+                     <div class="col-12 p-0">
+                        <div class="categories__item set-bg pt-0" data-setbg="img/categories/category-3.jpg">
+                           <div class="categories__img">
+                              <img src="img/categories/category-3.jpg" alt="">
+                           </div>
                            <div class="categories__text">
                               <h4>Kid’s fashion</h4>
                               <p>273 items</p>
@@ -132,8 +129,11 @@
                            </div>
                         </div>
                      </div>
-                     <div class=" -6  -6  -6 p-0">
-                        <div class="categories__item set-bg" data-setbg="img/categories/category-4.jpg">
+                     <div class="col-12 p-0">
+                        <div class="categories__item set-bg pb-0  mt-1" data-setbg="img/categories/category-4.jpg">
+                           <div class="categories__img">
+                              <img src="img/categories/category-4.jpg" alt="">
+                           </div>
                            <div class="categories__text">
                               <h4>Cosmetics</h4>
                               <p>159 items</p>
@@ -141,8 +141,11 @@
                            </div>
                         </div>
                      </div>
-                     <div class=" -6  -6  -6 p-0">
-                        <div class="categories__item set-bg" data-setbg="img/categories/category-5.jpg">
+                     <div class="col-12 p-0">
+                        <div class="categories__item set-bg pb-0 mt-1" data-setbg="img/categories/category-5.jpg">
+                           <div class="categories__img">
+                              <img src="img/categories/category-5.jpg" alt="">
+                           </div>
                            <div class="categories__text">
                               <h4>Accessories</h4>
                               <p>792 items</p>
@@ -155,40 +158,32 @@
             </div>
          </div>
       </section>
-      <section class="product spad">
-         <div class=" ">
-            <div class=" ">
-               <div class="   -4">
-                  <div class="section-title">
-                     <h4>New product</h4>
-                  </div>
-               </div>
-               <div class=" -8  -8">
-                  <ul class="filter__controls">
-                     <li class="active" data-filter="*">All</li>
-                     <li data-filter=".women">Women’s</li>
-                     <li data-filter=".men">Men’s</li>
-                     <li data-filter=".kid">Kid’s</li>
-                     <li data-filter=".accessories">Accessories</li>
-                     <li data-filter=".cosmetic">Cosmetics</li>
-                  </ul>
-               </div>
-            </div>
-            <div class="  property__gallery">
-               <div class=" -3  -4  -6 mix women">
+      <section class="product spad mt-3 container">
+   
+         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Women’s</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Men’s</a>
+            </li>
+            
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">  
+               <div class="  property__gallery row">
+               <div class="col-md-3 col-sm-4 col-6">
                   <div class="product__item">
-                     <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
-                        <div class="label new">New</div>
-                        <ul class="product__hover">
-                           <li><a href="img/product/product-1.jpg" class="image-popup"><span class="ar _expand"></span></a></li>
-                           <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                           <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                     </div>
                      <div class="product__item__text">
-                        <h6><a href="#">Buttons tweed blazer</a></h6>
+                        <div class="product__img">
+                           <img src="img/product/product-1.jpg" alt="">
+                        </div>
+                        <h6 class="product__name"><a href="#">Buttons tweed blazer</a></h6>
                         <div class="rating">
-                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star text-warning"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
@@ -198,42 +193,15 @@
                      </div>
                   </div>
                </div>
-               <div class=" -3  -4  -6 mix men">
+               <div class="col-md-3 col-sm-4 col-6">
                   <div class="product__item">
-                     <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
-                        <ul class="product__hover">
-                           <li><a href="img/product/product-2.jpg" class="image-popup"><span class="ar _expand"></span></a></li>
-                           <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                           <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                     </div>
                      <div class="product__item__text">
-                        <h6><a href="#">Flowy striped skirt</a></h6>
-                        <div class="rating">
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
+                        <div class="product__img">
+                           <img src="img/product/product-1.jpg" alt="">
                         </div>
-                        <div class="product__price">$ 49.0</div>
-                     </div>
-                  </div>
-               </div>
-               <div class=" -3  -4  -6 mix accessories">
-                  <div class="product__item">
-                     <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
-                        <div class="label stockout">out of stock</div>
-                        <ul class="product__hover">
-                           <li><a href="img/product/product-3.jpg" class="image-popup"><span class="ar _expand"></span></a></li>
-                           <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                           <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                     </div>
-                     <div class="product__item__text">
-                        <h6><a href="#">Cotton T-Shirt</a></h6>
+                        <h6 class="product__name"><a href="#">Buttons tweed blazer</a></h6>
                         <div class="rating">
-                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star text-warning"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
@@ -243,19 +211,15 @@
                      </div>
                   </div>
                </div>
-               <div class=" -3  -4  -6 mix cosmetic">
+               <div class="col-md-3 col-sm-4 col-6">
                   <div class="product__item">
-                     <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
-                        <ul class="product__hover">
-                           <li><a href="img/product/product-4.jpg" class="image-popup"><span class="ar _expand"></span></a></li>
-                           <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                           <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                     </div>
                      <div class="product__item__text">
-                        <h6><a href="#">Slim striped pocket shirt</a></h6>
+                        <div class="product__img">
+                           <img src="img/product/product-1.jpg" alt="">
+                        </div>
+                        <h6 class="product__name"><a href="#">Buttons tweed blazer</a></h6>
                         <div class="rating">
-                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star text-warning"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
@@ -265,19 +229,15 @@
                      </div>
                   </div>
                </div>
-               <div class=" -3  -4  -6 mix kid">
+               <div class="col-md-3 col-sm-4 col-6">
                   <div class="product__item">
-                     <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
-                        <ul class="product__hover">
-                           <li><a href="img/product/product-5.jpg" class="image-popup"><span class="ar _expand"></span></a></li>
-                           <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                           <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                     </div>
                      <div class="product__item__text">
-                        <h6><a href="#">Fit micro corduroy shirt</a></h6>
+                        <div class="product__img">
+                           <img src="img/product/product-1.jpg" alt="">
+                        </div>
+                        <h6 class="product__name"><a href="#">Buttons tweed blazer</a></h6>
                         <div class="rating">
-                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star text-warning"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
@@ -287,42 +247,15 @@
                      </div>
                   </div>
                </div>
-               <div class=" -3  -4  -6 mix women men kid accessories cosmetic">
-                  <div class="product__item sale">
-                     <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
-                        <div class="label sale">Sale</div>
-                        <ul class="product__hover">
-                           <li><a href="img/product/product-6.jpg" class="image-popup"><span class="ar _expand"></span></a></li>
-                           <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                           <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                     </div>
-                     <div class="product__item__text">
-                        <h6><a href="#">Tropical Kimono</a></h6>
-                        <div class="rating">
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                        </div>
-                        <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
-                     </div>
-                  </div>
-               </div>
-               <div class=" -3  -4  -6 mix women men kid accessories cosmetic">
+               <div class="col-md-3 col-sm-4 col-6">
                   <div class="product__item">
-                     <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
-                        <ul class="product__hover">
-                           <li><a href="img/product/product-7.jpg" class="image-popup"><span class="ar _expand"></span></a></li>
-                           <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                           <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                     </div>
                      <div class="product__item__text">
-                        <h6><a href="#">Contrasting sunglasses</a></h6>
+                        <div class="product__img">
+                           <img src="img/product/product-1.jpg" alt="">
+                        </div>
+                        <h6 class="product__name"><a href="#">Buttons tweed blazer</a></h6>
                         <div class="rating">
-                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star text-warning"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
@@ -332,31 +265,73 @@
                      </div>
                   </div>
                </div>
-               <div class=" -3  -4  -6 mix women men kid accessories cosmetic">
-                  <div class="product__item sale">
-                     <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
-                        <div class="label">Sale</div>
-                        <ul class="product__hover">
-                           <li><a href="img/product/product-8.jpg" class="image-popup"><span class="ar _expand"></span></a></li>
-                           <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                           <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                     </div>
+
+              
+            </div></div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">  <div class="  property__gallery row">
+               <div class="col-md-3 col-sm-4 col-6">
+                  <div class="product__item">
                      <div class="product__item__text">
-                        <h6><a href="#">Water resistant backpack</a></h6>
+                        <div class="product__img">
+                           <img src="img/product/product-1.jpg" alt="">
+                        </div>
+                        <h6 class="product__name"><a href="#">Buttons tweed blazer</a></h6>
                         <div class="rating">
-                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star text-warning"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
                            <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+                        <div class="product__price">$ 59.0</div>
                      </div>
                   </div>
                </div>
-            </div>
-         </div>
+               <div class="col-md-3 col-sm-4 col-6">
+                  <div class="product__item">
+                     <div class="product__item__text">
+                        <div class="product__img">
+                           <img src="img/product/product-1.jpg" alt="">
+                        </div>
+                        <h6 class="product__name"><a href="#">Buttons tweed blazer</a></h6>
+                        <div class="rating">
+                           <i class="fa fa-star text-warning"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                     </div>
+                  </div>
+               </div>
+         
+            </div></div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">  <div class="  property__gallery row">
+               <div class="col-md-3 col-sm-4 col-6">
+                  <div class="product__item">
+                     <div class="product__item__text">
+                        <div class="product__img">
+                           <img src="img/product/product-1.jpg" alt="">
+                        </div>
+                        <h6 class="product__name"><a href="#">Buttons tweed blazer</a></h6>
+                        <div class="rating">
+                           <i class="fa fa-star text-warning"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product__price">$ 59.0</div>
+                     </div>
+                  </div>
+               </div>
+              
+
+              
+            </div></div>
+          </div>
+         
       </section>
       <section class="banner set-bg" data-setbg="img/banner/banner-1.jpg">
          <div class=" ">
