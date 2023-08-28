@@ -1,6 +1,7 @@
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
@@ -16,6 +17,7 @@ li {
   font-size: 14px;
   position: relative;
 }
+
 .badge-custom {
   font-size: 7px;
 }
@@ -24,9 +26,11 @@ li {
   width: 100%;
   height: 100%;
 }
+
 .categories__item {
   position: relative;
 }
+
 .categories__text {
   position: absolute;
   top: 0;
@@ -38,11 +42,13 @@ li {
   padding-left: 20px;
   height: 100%;
 }
+
 .categories_wrap {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 5px;
 }
+
 .banner-right {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -60,21 +66,24 @@ li {
 .banner-right .categories__item {
   padding: 5px;
 }
+
 .categories__large__item .categories__img {
   padding-bottom: 15px;
 }
-.categories__text h4 {
-}
+
 .categories__text p {
   font-size: 14px;
 }
+
 .categories__text a {
   text-transform: uppercase;
   font-size: 12px;
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
   color: black;
 }
+
 .categories__text a::after {
   position: absolute;
   left: 0;
@@ -85,34 +94,40 @@ li {
   content: "";
 }
 
-.product__img img{
-    max-width: 100%;
+.product__img img {
+  max-width: 100%;
 }
-.product__name{
-    text-align: center;
-    margin-top: 10px;
+
+.product__name {
+  text-align: center;
+  margin-top: 10px;
 }
-.product__name a{
-    color:black;
+
+.product__name a {
+  color: black;
 }
-.rating{
-    display: flex;
-    justify-content: center;
+
+.rating {
+  display: flex;
+  justify-content: center;
 }
-.rating i{
-    font-size: 12px;
+
+.rating i {
+  font-size: 12px;
 }
-.product__price{
-    text-align: center;
-    font: 12px;
+
+.product__price {
+  text-align: center;
+  font: 12px;
 }
-#pills-tab > .nav-item{
-    background-color: none !important;
+
+#pills-tab > .nav-item {
+  background-color: none !important;
 }
-.nav-pills .nav-link.active{
-    background-color: white !important;
-    color: black;
-    border-bottom: 1px solid red;
-    border-radius: 0;
-    
-}
+
+.nav-pills .nav-link.active {
+  background-color: white !important;
+  color: black;
+  border-bottom: 1px solid red;
+  border-radius: 0;
+}/*# sourceMappingURL=style.css.map */
