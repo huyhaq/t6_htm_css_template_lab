@@ -1,0 +1,10 @@
+@import "./font";
+
+@mixin font-special{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Kablammo', cursive;
+    font-family: 'Lumanosimo', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-weight: bold;
+}
